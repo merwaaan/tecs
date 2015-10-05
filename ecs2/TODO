@@ -1,0 +1,29 @@
+Core
+====
+
+  - Bind Components with their Options
+    (right now, it's possible to do createEntity(CTransform, CSquareOptions)...)
+
+  - Notify about dependencies between components
+    (eg. CAnimated is useless without CSprite
+         CSprite is useless without CTransform
+         ...)
+
+Extra components
+================
+
+Motion:
+  - Move along complex trajectories
+    (waypoints could be entities with a special component?)
+
+Rendering:
+  - Layered, for z-ordering drawable entities
+
+Physics:
+  - Physics system
+  - Physics component
+  - Collision callbacks (how to handle that cleanly?)
+
+Input:
+  - Basic keyboard controller
+  - Basic mouse controller
